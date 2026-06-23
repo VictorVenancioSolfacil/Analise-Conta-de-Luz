@@ -14,6 +14,9 @@ Este piloto valida a chamada de um agente Dify usando GPT-5.5 para analisar uma 
 3. Anexa a imagem via `remote_url`
 4. Recebe a resposta do agente
 5. Imprime a análise no terminal
+6. Output: JSON{score, raciocinio}
+7. Se score = 1: indicio baixo de fraude, se score = 2 = indicio leve de fraude, se score = 3: alta chance de fraude
+8. Raciocinio = análise feita pela IA
 
 ## Variáveis de ambiente
 
