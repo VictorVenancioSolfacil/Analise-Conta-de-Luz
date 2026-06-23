@@ -1,5 +1,5 @@
 # Analise-Conta-de-Luz
-Encontra adulterações nas contas de luz 
+Encontra adulterações nas contas de luz (apenas imagem)
 
 # Piloto — Agente de Análise de Conta de Luz via Dify
 
