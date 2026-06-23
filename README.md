@@ -27,3 +27,21 @@ DIFY_API_KEY=
 DIFY_BASE_URL=
 S3_IMAGE_URL=
 DIFY_USER_ID=
+
+## Problemas encontrados
+
+### PDF enviado para modelo configurado apenas para imagem
+
+Sintoma:
+- HTTP 200 retornado pelo Dify
+- conversation_id gerado
+- nenhuma resposta do agente
+
+Diagnóstico:
+- Logs do Dify mostraram erro da LLM ao processar o arquivo remoto
+- O arquivo enviado era PDF
+- O modelo estava configurado para aceitar apenas imagens
+
+Solução:
+- Converter PDF para imagem antes do envio
+- Ou habilitar processamento de PDF no fluxo
